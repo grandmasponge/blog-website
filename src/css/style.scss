@@ -1,0 +1,16 @@
+html {
+  background-color: black;
+  color: white;
+  
+  text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    gap: 20px;
+    justify-content: center;
+
+}

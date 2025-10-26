@@ -1,16 +1,27 @@
 {
   "name": "blog",
   "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/grandmasponge/blog-website#readme",
+  "bugs": {
+    "url": "https://github.com/grandmasponge/blog-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandmasponge/blog-website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "del target && npx eleventy --serve",
+    "dev": "npx eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "sass": "^1.93.2"
   }
 }
