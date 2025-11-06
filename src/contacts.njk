@@ -1,0 +1,17 @@
+---
+title: Tobeans Contacts
+header: Contacts :3
+---
+
+{% extends 'layouts/defaultlayout.njk' %}
+{% block main %}
+<div>
+    <h2>If you some how need to contact me you can</h2>
+    <div>
+        <h3>Email: {{site.email}}</h3>
+        <h3>Discord: {{site.discord}} </h3>
+    </div>
+
+    <p>or if your trying to contact one of the kitties please click <a href="{{ site.kitty }}">to be redirected to them</a></p>
+</div>
+{% endblock %}

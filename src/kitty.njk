@@ -1,0 +1,19 @@
+---
+title: Waiting for kitty
+header: Loading Kitty...
+permalink: "/kitty/contacts.html"
+---
+
+{% extends 'layouts/defaultlayout.njk' %}
+{% block main %}
+    <div>
+        <div id="kitty-container" class="kitty-container">
+            <p id="kitty-text"></p>
+        </div>
+        <button onclick="LoadKitty()" >Please Click Here to Join Queue for kitty</button>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script type="module" src="/js/kitty.js"></script>
+{% endblock %}

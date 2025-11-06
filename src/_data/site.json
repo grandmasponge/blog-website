@@ -1,5 +1,11 @@
 {
     "title": "toebeans blog :3",
     "description": "a blog about the toebeans :3",
-    "tags": ["toebeans", "blog", ":3", "embedded development", "programming", "web development"]
+    "tags": ["toebeans", "blog", ":3", "embedded development", "programming", "web development"],
+    "last_updated": "30-Oct-2025",
+    "status": "Im okay :3",
+    "current_project": "Creating an RTOS for the BBC microbit:v2",
+    "kitty": "/kitty/contacts",
+    "email": "meowiewowie@meow.meow.purr.com",
+    "discord": "grandmasponge@327823986836635648"
 }

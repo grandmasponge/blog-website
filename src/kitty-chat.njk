@@ -1,0 +1,27 @@
+---
+title: kittyChat
+permalink: "/kitty/chat/index.html"
+---
+
+{% extends 'layouts/kittychatlayout.njk' %}
+{% block main %}
+    <div>
+        <div id="chatbox">
+
+        </div>
+        <div>
+            <form id="messageform">
+                <div>
+                    <input type="text" name="messagebox"/>
+                </div>
+                <div>
+                    <button>send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script src="/js/kittychat.js"></script>
+{% endblock %}

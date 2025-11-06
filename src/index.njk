@@ -5,5 +5,29 @@ header: Welcome to the toebeans blog :3
 
 {% extends 'layouts/defaultlayout.njk' %}
 {% block main %}
-    <p>I love the becca beans :3</p>
+<div class="index-container">
+    <div class="threejs-container" id="threejs-container">
+    </div>
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="/static/images/cats/rhubarb.jpeg" alt="Profile Picture"/>
+        </div>
+        <div class="profile-data">
+            <h2>Latest Update:</h2>
+            <p>Site last updated on: {{ site.last_updated }}</p>
+            <h2>Status:</h2>
+            <p>{{ site.status }}</p>
+            <h2>About Me:</h2>
+            <p>My name is Toby<small> (meow/mew)</small> im a University student currently studing Computer Science <small>(2nd year)</small> at brunel london. Im mainly into OS development, and Embedded systems development this will be the main focus on my blog plus other things I have two cats <small>(Rhubarb and Custard)</small> and one dog <small>(Henry)</small> </p>
+            <p>I also have a gorgeous wife called becca:3</p>
+            <h2>Current Project:</h2>
+            <p>{{ site.current_project }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="module" src="/js/main.js"></script>
+
 {% endblock %}

@@ -1,9 +1,10 @@
 html {
   background-color: black;
   color: white;
-  
-  text-align: center;
+  overflow-x: hidden;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto !important;
 }
+  
 
 nav {
     display: flex;
@@ -12,5 +13,55 @@ nav {
     padding-bottom: 5px;
     gap: 20px;
     justify-content: center;
+    padding: 10px;
 
+}
+
+.threejs-container {
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+}
+
+.layout-seprator {
+    width: 100vw;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+
+.index-container {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+   
+}
+
+.profile-data {
+    width: 50%;
+
+}
+
+.profile-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+    
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover; 
+    }
 }

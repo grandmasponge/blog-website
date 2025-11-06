@@ -1,0 +1,22 @@
+---
+title: Tobeans Chats
+header: Chat :3
+---
+
+{%block styles %}
+<link rel="stylesheet" href="/css/rooms.css" />
+{% endblock %}
+
+{% extends 'layouts/defaultlayout.njk' %}
+{% block main %}
+<div class="room-container">
+    <h2>Chats</h2>
+    <div>
+        <ul>
+        {%for room in rooms %}
+        <li><a href="{{ room.link }}">{{room.name}}</a></li>
+        {%endfor%}
+        </ul>
+    </div>
+</div>
+{% endblock %}

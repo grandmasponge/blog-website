@@ -2,7 +2,15 @@ import path from "node:path";
 import * as sass from "sass";
 
 export default function(eleventyConfig) {
+
+  eleventyConfig.addPassthroughCopy("src/static/images") 
+  eleventyConfig.addWatchTarget('./src/js/');
+
   eleventyConfig.addTemplateFormats("scss")
+
+  eleventyConfig.addCollection("posts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("post");
+  });
 
   eleventyConfig.addExtension("scss", {
         outputFileExtension: "css",

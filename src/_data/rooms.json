@@ -1,0 +1,14 @@
+[
+    {
+        "name":"Developer Chat",
+        "link":"/chat/developer"
+    },
+    {
+        "name":"General Chat",
+        "link":"/chat/general"
+    },
+    {
+        "name": "Cats",
+        "link": "/chat/cats"
+    }
+]
